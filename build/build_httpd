@@ -1,0 +1,10 @@
+#!/bin/bash
+set -xe
+cd /root/build
+
+yum -y install http mod_ssl
+yum -y clean all
+
+# output some status info
+which httpd
+/usr/sbin/httpd -v
