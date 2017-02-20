@@ -2,7 +2,7 @@
 set -xe
 cd /root/build
 
-yum -y install http mod_ssl
+yum -y install httpd mod_ssl
 yum -y clean all
 
 # output some status info
