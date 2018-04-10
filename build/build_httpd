@@ -4,6 +4,7 @@ cd /root/build
 
 yum -y install httpd mod_ssl
 yum -y clean all
+rm -rf /var/cache/yum
 
 # output some status info
 which httpd
