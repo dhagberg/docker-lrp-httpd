@@ -1,3 +1,3 @@
 #!/bin/bash
 set -xe
-sudo docker run --rm -ti dhagberg/co811-httpd
+sudo docker run --rm -ti dhagberg/lrp-httpd
