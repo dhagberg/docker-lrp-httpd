@@ -1,11 +1,12 @@
 #!/bin/bash
 set -xe
+export DEBIAN_FRONTEND=noninteractive
 cd /root/build
 
-yum -y install httpd mod_ssl
-yum -y clean all
-rm -rf /var/cache/yum
+apt-get update
+apt-get -y install apache2 -y
+apt-get clean; /bin/rm -rf /var/lib/apt/lists/*
 
 # output some status info
-which httpd
-/usr/sbin/httpd -v
+which apache2
+/usr/sbin/apache2 -v
